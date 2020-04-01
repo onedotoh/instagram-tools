@@ -1,1 +1,31 @@
-<p>manager works!</p>
+<div nz-row class="grid">
+  <div nz-col nzSpan="12">
+    <h2>High Level Hashtags</h2>
+    <textarea rows="4" nz-input [(ngModel)]="high"></textarea>
+
+    <hr>
+
+    <h2>Mid Level Hashtags</h2>
+    <textarea rows="4" nz-input [(ngModel)]="mid"></textarea>
+
+    <hr>
+
+    <h2>Low Level Hashtags</h2>
+    <textarea rows="4" nz-input [(ngModel)]="low"></textarea>
+
+    <hr>
+
+    <h2>Brand Hashtag</h2>
+    <textarea rows="4" nz-input [(ngModel)]="brand" [disabled]="true"></textarea>
+  </div>
+  <div nz-col nzSpan="12">
+    <h2>Result ({{size}})</h2>
+    <textarea rows="4" nz-input [(ngModel)]="result"></textarea>
+
+    <button class="button" nz-button nzType="primary" (click)="copyToClipboard()">Copy & Randomize</button>
+
+  </div>
+
+
+
+</div>
